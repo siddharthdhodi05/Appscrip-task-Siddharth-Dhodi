@@ -1,0 +1,43 @@
+.header{
+  width: 100%;
+  position: fixed;
+  top: 32px;
+  left: 0;
+  z-index: 50;
+  border-bottom: 1px solid #cbd5e1;
+  background-color: #ffffff;
+}
+
+
+.headerContainer{
+  position: relative;
+  z-index: 50;
+   
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.headerContent{
+  position: relative;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge{
+  width: 19px;
+  height: 19px;
+}
+
+@media (min-width: 768px){
+  .badge{
+    width: 36px;
+    height: 36px;
+  }
+}
+

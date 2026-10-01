@@ -1,0 +1,35 @@
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 12px;
+}
+
+
+.icon, 
+.icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: slategray; 
+}
+
+.nav > .icon:last-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    gap: 24px;
+  }
+
+  .icon,
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav > .icon:last-child {
+  display: block;
+}
+}
