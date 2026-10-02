@@ -1,0 +1,11 @@
+.content {
+  display: grid;
+}
+
+.sidebarOpen {
+  grid-template-columns: 300px minmax(0, 1fr);
+}
+
+.sidebarClosed {
+  grid-template-columns: 1fr;
+}

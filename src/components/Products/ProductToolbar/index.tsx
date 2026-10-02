@@ -6,13 +6,16 @@ import { Dispatch, SetStateAction, useState } from "react";
 interface ProductToolbarProps {
   isSidebarOpen: boolean;
   setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+  sortOption: string;
+  setSortOption: Dispatch<SetStateAction<string>>;
 }
 const ProductToolbar = ({
+  sortOption,
   isSidebarOpen,
   setIsSidebarOpen,
+  setSortOption,
 }: ProductToolbarProps) => {
   const [isSortOpen, setIsSortOpen] = useState(false);
-  // const [sortOption, setSortOption] = useState("Recommended");
 
   return (
     <div className={styles.container}>
@@ -41,16 +44,51 @@ const ProductToolbar = ({
 
       <div className={styles.sort}>
         <button onClick={() => setIsSortOpen((prev) => !prev)}>
-          Recommended
+          {sortOption}
         </button>
 
         {isSortOpen && (
           <div className={styles.dropdown}>
-            <button>Recommended</button>
-            <button>Newest First</button>
-            <button>Popular</button>
-            <button>Price: high to low</button>
-            <button>Price: low to high</button>
+            <button
+              onClick={() => {
+                setSortOption("Recommended");
+                setIsSortOpen((prev) => !prev);
+              }}
+            >
+              Recommended
+            </button>
+            <button
+              onClick={() => {
+                setSortOption("Newest First");
+                setIsSortOpen((prev) => !prev);
+              }}
+            >
+              Newest First
+            </button>
+            <button
+              onClick={() => {
+                setSortOption("Popular");
+                setIsSortOpen((prev) => !prev);
+              }}
+            >
+              Popular
+            </button>
+            <button
+              onClick={() => {
+                setSortOption("Price: high to low");
+                setIsSortOpen((prev) => !prev);
+              }}
+            >
+              Price: high to low
+            </button>
+            <button
+              onClick={() => {
+                setSortOption("Price: low to high");
+                setIsSortOpen((prev) => !prev);
+              }}
+            >
+              Price: low to high
+            </button>
           </div>
         )}
       </div>

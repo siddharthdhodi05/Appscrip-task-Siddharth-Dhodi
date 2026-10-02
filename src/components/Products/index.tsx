@@ -1,19 +1,10 @@
-"use client";
+import { getProducts } from "@/lib/product";
+import ProductsClient from "./ProductsClient";
 
-import { useState } from "react";
-import ProductToolbar from "./ProductToolbar";
+const Products = async () => {
+  const products = await getProducts();
 
-const Products = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  return (
-    <div>
-      <ProductToolbar
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
-    </div>
-  );
+  return <ProductsClient products={products} />;
 };
 
 export default Products;

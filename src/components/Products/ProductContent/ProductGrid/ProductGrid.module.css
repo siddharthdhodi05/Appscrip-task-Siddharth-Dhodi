@@ -1,0 +1,25 @@
+.productGrid {
+  width: 100%;
+  display: grid;
+  gap: 24px;
+}
+
+.sidebarOpen {
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+}
+
+.sidebarClosed {
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .productGrid,
+  .sidebarOpen,
+  .sidebarClosed {
+    grid-template-columns: repeat(2, 168px);
+    justify-content: center;
+    gap: 24px;
+  }
+}

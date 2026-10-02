@@ -1,0 +1,109 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  background-color: white;
+  color: black;
+
+  padding: 24px;
+}
+
+.filterGroup {
+  width: 100%;
+
+  background-color: white;
+  color: black;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  padding-bottom: 16px;
+}
+
+.filterGroup button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 0;
+  padding-left: 96px;
+
+  border: none;
+  background: none;
+  color: black;
+
+  font-family: "Simplon Norm";
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+  text-align: left;
+}
+
+.all {
+  display: block;
+
+  padding-left: 96px;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding: 8px 0 4px;
+  padding-left: 96px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+  appearance: none;
+
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid #000;
+  background-color: white;
+
+  cursor: pointer;
+
+  display: grid;
+  place-content: center;
+}
+
+.options input[type="checkbox"]::before {
+  content: "✓";
+
+  font-size: 14px;
+  color: black;
+
+  transform: scale(0);
+}
+
+.options input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.options input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}

@@ -1,0 +1,480 @@
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border-top: 1px solid #6b3df5;
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 74px;
+}
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.topSection {
+  min-height: 248px;
+  padding: 62px 0 42px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.newsletter {
+  flex: 1;
+}
+
+.newsletter h3,
+.contact h3,
+.currency h3,
+.linksColumn h3,
+.socialColumn h3 {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.newsletter p {
+  margin: 18px 0 38px;
+
+  font-size: 13px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.subscribeForm {
+  display: flex;
+  width: 100%;
+  max-width: 460px;
+  gap: 12px;
+}
+
+.subscribeForm input {
+  width: 303px;
+  height: 38px;
+
+  padding: 0 18px;
+
+  border: none;
+  outline: none;
+
+  background: #fff;
+  color: #222;
+
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.subscribeForm input::placeholder {
+  color: #b8b8b8;
+}
+
+.subscribeForm button {
+  width: 145px;
+  height: 38px;
+
+  border: 1px solid #555;
+  border-radius: 4px;
+
+  background: transparent;
+  color: #555;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.subscribeForm button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contactSection {
+  width: 385px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   CURRENCY
+========================================= */
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.currencyValue {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 13px;
+}
+
+.flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.currencyValue strong {
+  font-weight: 700;
+}
+
+.currency p {
+  max-width: 380px;
+
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #666;
+}
+
+/* =========================================
+   BOTTOM SECTION
+========================================= */
+
+.bottomSection {
+  padding: 43px 0 25px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.2fr;
+  gap: 60px;
+}
+
+/* Company */
+
+.companyColumn h2 {
+  margin: 0 0 19px;
+
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.companyColumn nav,
+.linksColumn nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyColumn nav {
+  gap: 12px;
+}
+
+.companyColumn a,
+.linksColumn a {
+  width: fit-content;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.companyColumn a:hover,
+.linksColumn a:hover {
+  text-decoration: underline;
+}
+
+/* Quick links */
+
+.linksColumn h3 {
+  margin-bottom: 20px;
+}
+
+.linksColumn nav {
+  gap: 12px;
+}
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.socialColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialColumn h3 {
+  margin-bottom: 18px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcons a {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  color: #fff;
+
+  transition: background 0.2s ease;
+}
+
+.socialIcons a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* =========================================
+   PAYMENT METHODS
+========================================= */
+
+.paymentSection {
+  margin-top: 42px;
+}
+
+.paymentSection h3 {
+  margin-bottom: 14px;
+}
+
+.paymentMethods {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.paymentBadge {
+  min-width: 45px;
+  height: 28px;
+
+  padding: 0 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+
+  background: #fff;
+  color: #111;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.copyright {
+  padding: 7px 0 10px;
+
+  text-align: center;
+
+  color: #aaa;
+
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .footerContainer {
+    padding: 0 35px;
+  }
+
+  .topSection {
+    gap: 40px;
+  }
+
+  .contactSection {
+    width: 320px;
+  }
+
+  .bottomSection {
+    gap: 30px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+  .footerContainer {
+    padding: 0 20px;
+  }
+
+  /* Top */
+
+  .topSection {
+    padding: 40px 0 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .newsletter h3,
+  .contact h3,
+  .currency h3,
+  .linksColumn h3,
+  .socialColumn h3 {
+    font-size: 14px;
+  }
+
+  .newsletter p {
+    margin: 14px 0 22px;
+
+    font-size: 12px;
+  }
+
+  .subscribeForm {
+    max-width: none;
+    gap: 8px;
+  }
+
+  .subscribeForm input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .subscribeForm button {
+    width: 115px;
+    flex-shrink: 0;
+  }
+
+  /* Contact */
+
+  .contactSection {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .contact {
+    gap: 10px;
+  }
+
+  .contact a {
+    font-size: 12px;
+  }
+
+  .currency {
+    gap: 10px;
+  }
+
+  .currency p {
+    max-width: 100%;
+    font-size: 9px;
+  }
+
+  /* Bottom */
+
+  .bottomSection {
+    padding: 35px 0 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+  }
+
+  .companyColumn h2 {
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+
+  .companyColumn nav,
+  .linksColumn nav {
+    gap: 11px;
+  }
+
+  .companyColumn a,
+  .linksColumn a {
+    font-size: 12px;
+  }
+
+  /* Social */
+
+  .socialColumn {
+    gap: 30px;
+  }
+
+  .paymentSection {
+    margin-top: 0;
+  }
+
+  .paymentMethods {
+    gap: 5px;
+  }
+
+  .paymentBadge {
+    min-width: 43px;
+    height: 27px;
+  }
+
+  .copyright {
+    padding: 10px 0 18px;
+    font-size: 9px;
+  }
+}
